@@ -4,12 +4,19 @@
   "version": "1.0.0",
   "description": "This is a simple and efficient command-line tool that allows users to quickly select and copy a Git branch name to the clipboard.",
   "main": "index.js",
+  "bin": {
+    "switch": "./index.js"
+  },
   "scripts": {
     "fix": "prettier --write . && eslint --fix .",
     "lint": "prettier --check . && eslint ."
   },
-  "author": "",
-  "license": "ISC",
+  "author": "odentakashi <odentakashidesu2@gmail.com> (https://github.com/OdenTakashi)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OdenTakashi/branch-clipy/issues"
+  },
+  "homepage": "https://github.com/OdenTakashi/branch-clipy#readme",
   "devDependencies": {
     "@eslint/js": "^9.10.0",
     "eslint": "^9.10.0",
