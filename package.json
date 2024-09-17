@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "branch-clipy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is a simple and efficient command-line tool that allows users to quickly select and copy a Git branch name to the clipboard.",
   "main": "index.js",
   "bin": {
