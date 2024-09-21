@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 import { exec, execSync } from "child_process";
 import enquirer from "enquirer";
 const { Select } = enquirer;
