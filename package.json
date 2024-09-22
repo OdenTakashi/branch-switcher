@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "branch-switcher",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "This is a simple and efficient command-line tool that allows users to quickly select and copy a Git branch name to the clipboard.",
   "main": "index.js",
   "bin": {
@@ -14,9 +14,9 @@
   "author": "odentakashi <odentakashidesu2@gmail.com> (https://github.com/OdenTakashi)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/OdenTakashi/branch-clipy/issues"
+    "url": "https://github.com/OdenTakashi/branch-switcher/issues"
   },
-  "homepage": "https://github.com/OdenTakashi/branch-clipy#readme",
+  "homepage": "https://github.com/OdenTakashi/branch-switcher#readme",
   "devDependencies": {
     "@eslint/js": "^9.10.0",
     "eslint": "^9.10.0",
