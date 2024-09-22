@@ -5,11 +5,13 @@ import enquirer from "enquirer";
 const { Select } = enquirer;
 
 function parseBranchChoices(branches) {
-  const choices = branches.split('\n').filter(branch => branch.trim() !== '');
-  const indexOfCurrentBranch = choices.findIndex(choice => choice.includes('*'));
+  const choices = branches.split("\n").filter((branch) => branch.trim() !== "");
+  const indexOfCurrentBranch = choices.findIndex((choice) =>
+    choice.includes("*"),
+  );
   choices.splice(indexOfCurrentBranch, 1);
 
-  return choices
+  return choices;
 }
 
 exec("git branch", (err, stdout) => {
@@ -18,7 +20,7 @@ exec("git branch", (err, stdout) => {
     return;
   }
 
-  const choices = parseBranchChoices(stdout)
+  const choices = parseBranchChoices(stdout);
 
   const prompt = new Select({
     message: "You wanna switch to ..🏃‍♀️",
