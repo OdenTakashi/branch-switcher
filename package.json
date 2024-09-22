@@ -1,11 +1,11 @@
 {
   "type": "module",
-  "name": "branch-clipy",
-  "version": "1.0.2",
+  "name": "branch-switcher",
+  "version": "1.0.1",
   "description": "This is a simple and efficient command-line tool that allows users to quickly select and copy a Git branch name to the clipboard.",
   "main": "index.js",
   "bin": {
-    "switcherb": "index.js"
+    "switchb": "index.js"
   },
   "scripts": {
     "fix": "prettier --write . && eslint --fix .",
