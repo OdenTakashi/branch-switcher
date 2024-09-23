@@ -14,16 +14,9 @@ function parseBranchChoices(branches) {
   return choices;
 }
 
-exec("git branch", (err, stdout) => {
-  if (err) {
-    console.log(err);
-    return;
-  }
-
-  const choices = parseBranchChoices(stdout);
-
+function handleBranchSwitch(choices) {
   const prompt = new Select({
-    message: "You wanna switch to ..🏃‍♀️",
+    message: "Switch to ..🏃‍♀️",
     choices,
   });
 
@@ -39,4 +32,23 @@ exec("git branch", (err, stdout) => {
     .catch((promptError) => {
       console.error("Error with prompt...Please Select branch 🪵", promptError);
     });
-});
+}
+
+function main() {
+  exec("git branch", (err, stdout) => {
+    if (err) {
+      console.log(err);
+      return;
+    }
+
+    const choices = parseBranchChoices(stdout);
+    if (choices.length === 0) {
+      console.log("No available branches to switch.");
+      return;
+    }
+
+    handleBranchSwitch(choices);
+  });
+}
+
+main();

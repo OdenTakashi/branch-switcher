@@ -9,6 +9,7 @@ $ npm install -g branch-switcher
 ```
 
 ## Usage
+
 When you run the switchb command, the branches of the current project will be displayed. Use the arrow keys to select the branch you want to switch to, and press Enter. This will switch to the specified branch.
 
 ```

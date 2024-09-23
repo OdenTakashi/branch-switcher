@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "branch-switcher",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "This is a simple and efficient command-line tool that allows users to quickly select and copy a Git branch name to the clipboard.",
   "main": "index.js",
   "bin": {
