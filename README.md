@@ -16,4 +16,4 @@ When you run the switchb command, the branches of the current project will be di
 $ switchb
 ```
 
-![gif)](https://github.com/user-attachments/assets/28083758-680a-4c6f-a149-5eb9c3a225f9)
+![demo_gif](https://github.com/user-attachments/assets/f32d1050-ad03-45b3-904f-6a4031fb600d)
