@@ -35,7 +35,7 @@ function handleBranchSwitch(choices) {
 }
 
 function main() {
-  exec("git branch", (err, stdout) => {
+  exec("git branch --sort=-committerdate", (err, stdout) => {
     if (err) {
       console.log(err);
       return;
